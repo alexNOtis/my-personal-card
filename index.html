@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Alex Garcia personal portfolio card">
+  <title>Alex Garcia | Personal Card</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="wordmark" href="#home" data-view="home" aria-label="Alex Garcia home">
+        <span class="wordmark-mark">AG</span>
+        <span>alexgarcia<span class="wordmark-dot">.</span>card</span>
+      </a>
+      <nav class="main-nav" aria-label="Primary navigation">
+        <button class="nav-link is-active" data-view="home">01 <span>home</span></button>
+        <button class="nav-link" data-view="projects">02 <span>projects</span></button>
+        <button class="nav-link" data-view="skills">03 <span>skills</span></button>
+        <button class="nav-link" data-view="portfolio">04 <span>portfolio</span></button>
+      </nav>
+      <a class="availability" id="availability-link" href="mailto:your-email@example.com"><span class="availability-dot"></span> available for good work</a>
+    </header>
+
+    <main>
+      <section class="view view-home is-visible" id="home-view" aria-labelledby="home-title">
+        <div class="hero-banner" id="hero-banner">
+          <div class="hero-grid"></div>
+          <div class="hero-kicker"><span class="pixel-cross">✣</span> independent maker / 2026</div>
+          <div class="hero-stamp">AG<br><span>EST. 1998</span></div>
+          <div class="hero-title-wrap">
+            <p class="eyebrow">portfolio card no. 01</p>
+            <h1 id="home-title">Alex<br><em>Garcia</em></h1>
+            <p class="hero-caption">Designing digital places<br>worth spending time in.</p>
+          </div>
+          <div class="scroll-hint"><span class="scroll-line"></span> scroll to explore</div>
+        </div>
+        <div class="home-content">
+          <div class="profile-panel">
+            <div class="profile-image-wrap">
+              <div class="profile-image"><img id="profile-image" alt="Alex Garcia profile picture"><span>AG</span></div>
+            </div>
+            <div>
+              <p class="eyebrow">currently based in</p>
+              <p class="location" id="location">Charleston, SC <span>↗</span></p>
+            </div>
+          </div>
+          <div class="intro-copy">
+            <p class="eyebrow">a little about me</p>
+            <p class="large-copy">I’m a software engineering and computer science student building <span>thoughtful, useful</span> digital experiences.</p>
+            <div class="profile-details"><p id="employment">Part-time online at CARTEX Data</p><p id="education">Dual major at the College of Charleston</p><p class="current-project">currently building <strong id="current-project">Merlin</strong></p></div>
+              <a class="text-link" id="intro-email-link" href="mailto:your-email@example.com">Let’s make something <span>↗</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="view" id="projects-view" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <div><p class="eyebrow">the archive / 2022—2026</p><h2 id="projects-title">Projects<span class="heading-period">.</span></h2></div>
+          <p class="section-note">Selected work, cast in pixels.<br>Click a piece to inspect it.</p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card project-lime">
+            <div class="project-topline"><span>01 / product</span><span>2026</span></div>
+            <div class="statue-stage" data-statue="commonGround"><img class="statue-image" alt="Common Ground pixel statue"><div class="pixel-statue statue-arch"></div><span class="stage-label">MUSEUM<br>OF SMALL<br>THINGS</span></div>
+            <div class="project-meta"><h3>Merlin</h3><p>AI assistance for research and instruction, built to help people think and learn.</p><a href="merlin.html" aria-label="View Merlin project">view project ↗</a></div>
+          </article>
+          <article class="project-card project-coral">
+            <div class="project-topline"><span>02 / identity</span><span>2025</span></div>
+            <div class="statue-stage" data-statue="folklore"><img class="statue-image" alt="Folklore Studio pixel statue"><div class="pixel-statue statue-bust"></div><span class="stage-label">FORM<br>FOLLOWS<br>FEELING</span></div>
+            <div class="project-meta"><h3>Degree Projects</h3><p>Selected work from a dual major in software engineering and computer science.</p><a href="degree-projects.html" aria-label="View degree projects">details soon ↗</a></div>
+          </article>
+          <article class="project-card project-blue">
+            <div class="project-topline"><span>03 / editorial</span><span>2024</span></div>
+            <div class="statue-stage" data-statue="afterimage"><img class="statue-image" alt="Afterimage pixel statue"><div class="pixel-statue statue-pillar"></div><span class="stage-label">READ<br>BETWEEN<br>LINES</span></div>
+            <div class="project-meta"><h3>Coming Soon</h3><p>More experiments, collaborations, and client work are taking shape.</p><a href="coming-soon.html" aria-label="View coming soon projects">details soon ↗</a></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="view" id="skills-view" aria-labelledby="skills-title">
+        <div class="section-heading skills-heading">
+          <div><p class="eyebrow">the toolkit / always learning</p><h2 id="skills-title">Skills<span class="heading-period">.</span></h2></div>
+          <p class="section-note">Every discipline has a different<br>way of moving through the board.</p>
+        </div>
+        <div class="skills-board">
+          <article class="skill-card"><div class="chess-stage"><div class="pixel-piece rook"></div></div><div class="skill-info"><span class="skill-index">01</span><h3>Programming</h3><p>Building useful systems from clear logic.</p><span class="skill-tag">the rook / steady</span></div></article>
+          <article class="skill-card"><div class="chess-stage"><div class="pixel-piece queen"></div></div><div class="skill-info"><span class="skill-index">02</span><h3>Entrepreneurship</h3><p>Turning a promising idea into a practical direction.</p><span class="skill-tag">the queen / versatile</span></div></article>
+          <article class="skill-card"><div class="chess-stage"><div class="pixel-piece king"></div></div><div class="skill-info"><span class="skill-index">03</span><h3>Team Leading</h3><p>Helping people move together toward the same goal.</p><span class="skill-tag">the king / composed</span></div></article>
+          <article class="skill-card"><div class="chess-stage"><div class="pixel-piece knight"></div></div><div class="skill-info"><span class="skill-index">04</span><h3>JavaScript</h3><p>Creating responsive interactions and dynamic tools.</p><span class="skill-tag">the knight / inventive</span></div></article>
+          <article class="skill-card"><div class="chess-stage"><div class="pixel-piece rook"></div></div><div class="skill-info"><span class="skill-index">05</span><h3>HTML</h3><p>Structuring accessible, purposeful web experiences.</p><span class="skill-tag">the rook / foundational</span></div></article>
+          <article class="skill-card"><div class="chess-stage"><div class="pixel-piece bishop"></div></div><div class="skill-info"><span class="skill-index">06</span><h3>Python</h3><p>Exploring data, automation, and intelligent systems.</p><span class="skill-tag">the bishop / perceptive</span></div></article>
+          <article class="skill-card"><div class="chess-stage"><div class="pixel-piece king"></div></div><div class="skill-info"><span class="skill-index">07</span><h3>Project Management</h3><p>Keeping complex work clear, paced, and moving.</p><span class="skill-tag">the king / strategic</span></div></article>
+          <article class="skill-card"><div class="chess-stage"><div class="pixel-piece knight"></div></div><div class="skill-info"><span class="skill-index">08</span><h3>Website Building</h3><p>Bringing structure, style, and code into one place.</p><span class="skill-tag">the knight / adaptive</span></div></article>
+          <article class="skill-card"><div class="chess-stage"><div class="pixel-piece pawn"></div></div><div class="skill-info"><span class="skill-index">09</span><h3>Discipline</h3><p>Showing up consistently and finishing what matters.</p><span class="skill-tag">the pawn / persistent</span></div></article>
+        </div>
+      </section>
+
+      <section class="view" id="portfolio-view" aria-labelledby="portfolio-title">
+        <div class="section-heading">
+          <div><p class="eyebrow">client work / selected collaborations</p><h2 id="portfolio-title">Portfolio<span class="heading-period">.</span></h2></div>
+          <p class="section-note">A place for the work<br>you make with others.</p>
+        </div>
+        <div class="portfolio-grid" id="portfolio-grid">
+          <div class="portfolio-empty" id="portfolio-empty"><span class="empty-mark">+</span><h3>Client work coming soon</h3></div>
+        </div>
+      </section>
+    </main>
+
+    <div class="status-bar"><span class="status-pulse"></span><span>site status</span><strong>currently building</strong><span class="status-divider">/</span><span>Merlin</span></div>
+    <footer class="footer"><span>© 2026 Alex Garcia</span><span>made with curiosity <span class="footer-mark">✳</span></span><a id="social-link" href="https://www.linkedin.com/in/your-profile/" target="_blank" rel="noreferrer">social ↗</a><a id="footer-email-link" href="mailto:your-email@example.com">say hello ↗</a></footer>
+  </div>
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
